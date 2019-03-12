@@ -1,0 +1,71 @@
+.carousel-tile {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+.carousel-tile img {
+  width: 200px;
+  height: 200px;
+}
+
+.carousel-container {
+  width: 600px;
+  height: 200px;
+  margin: 100px auto 0 auto;
+  display: flex;
+  overflow: hidden;
+}
+
+.btn-position-right {
+  position: relative;
+  bottom: 120px;
+  float: right;
+  right: 624px;
+  background-color: darkorange;
+  color: darkslategray;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn-position-left {
+  position: relative;
+  bottom: 120px;
+  left: 624px;
+  background-color: darkorange;
+  color: darkslategray;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.carousel-indicators {
+  position: relative;
+  bottom: 100px;
+}
+
+.btn-delete-image {
+  position: relative;
+  background-color: gold;
+  color: darkslategray;
+  font-size: 20px;
+}
+
+
+
+
+
+/* .carousel-indicators li {
+  height: 10px ;
+  border-radius: 0px ;
+  width: 5%;
+} */

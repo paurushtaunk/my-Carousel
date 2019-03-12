@@ -1,0 +1,43 @@
+<div class="my-carousel" id="my-carousel">
+  <div class="carousel-container">
+    <div class="carousel-tile" ng-repeat="img in vm.imageUrls" active="img.active">
+      <div>
+        <button type="button" class="btn-delete-image" ng-click="vm.removeImage($index);">Delete Img
+          {{$index +1}}</button>
+
+        <img ng-src="{{img}}" ng-bind="{{ $index + 1 }}">
+
+      </div>
+    </div>
+
+  </div>
+  <div class="btn-container">
+    <button type="button" class="btn btn-default btn-position-left">
+      < </button> <button type="button" class="btn btn-default btn-position-right">
+        >
+    </button>
+  </div>
+
+  <ol class="carousel-indicators">
+    <!-- <li ng-repeat="img in vm.imageUrls" ng-class="{active: (img.index == 0)}"
+      data-ride="0" class="active">&nbsp;</li> -->
+    <li class="active"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ol>
+  <div class="insertimg-button">
+    <div class="col-sm-5">
+      <input class="form-control" ng-model="vm.gitImage" placeholder="Click Submit to add Image intp carousel" />
+    </div>
+    <div class="col-sm-12">
+      <button type="button" class="btn btn-primary" ng-click="vm.insertImage();">Submit</button>
+    </div>
+  </div>
+
+
+</div>
